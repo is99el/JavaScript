@@ -107,3 +107,14 @@
 
 // x--;
 // console.log(x);
+
+var heightIsmael = 1.72;
+var massIsmael = 60;
+
+var BMI = massIsmael / (heightIsmael * heightIsmael);
+console.log(BMI);
+
+var heightBurak = 1.85;
+var massBurak = 75;
+var BMI = massBurak / (heightBurak * heightBurak);
+console.log(BMI);
