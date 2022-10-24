@@ -261,3 +261,22 @@
 // yearUntilRetirement(2004, " ismael");
 // yearUntilRetirement(2000, " ismael");
 // yearUntilRetirement(2010, " ismael");
+
+/*************************
+ * Objects and properities
+ */
+
+// var ismael = {
+//   firstName: "Ismael",
+//   lastName: "Azaaouaj",
+//   birthYear: 2004,
+//   familie: ["mm,aa,rr,tt"],
+//   job: "Software developer",
+//   isMarried: false,
+// };
+
+// console.log(ismael.birthYear);
+// console.log(ismael["familie"]);
+
+// var jane = new Object();
+// jane.name = "Jane";

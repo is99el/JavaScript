@@ -70,3 +70,55 @@ if (weeer === "Regen") {
 } else {
   console.log("Als het helemaal niet regent, dan zet ik mijn zonnebril op..");
 }
+
+/*10,11*/
+var cijfer1 = 9.4;
+var cijfer2 = 3.8;
+var cijfer3 = 2.7;
+var cijfer4 = 6.7;
+var cijfer5 = 8.9; /* 2*/
+
+var gemmideld = (cijfer1 + cijfer2 + cijfer3 + cijfer4 + cijfer5) / 4;
+console.log(gemmideld);
+
+/*12*/
+var cijfer1 = 7.7;
+var cijfer2 = 7.6;
+var cijfer3 = 7.3;
+var cijfer4 = 5.8;
+var cijfer5 = 6.9;
+
+/*13 */
+var gemmideld = (cijfer1 + cijfer2 + cijfer3 + cijfer4 + cijfer5) / 4;
+console.log(gemmideld);
+
+var SofieH = 9.4;
+var SarahH = 7.7;
+if (SofieH > SarahH)
+  console.log(
+    "Sophie heeft het hoogste cijfer gehaald en het is een " + SofieH
+  );
+
+var cijfer1 = 9.4;
+var cijfer2 = 3.8;
+var cijfer3 = 2.7;
+var cijfer4 = 6.7;
+var cijfer5 = 8.9 * 2;
+
+var gemmideld1 = (cijfer1 + cijfer2 + cijfer3 + cijfer4 + cijfer5) / 4;
+console.log(gemmideld1);
+
+var cijfer1 = 7.7;
+var cijfer2 = 7.6;
+var cijfer3 = 7.3;
+var cijfer4 = 5.8;
+var cijfer5 = 6.9;
+
+var gemmideld2 = (cijfer1 + cijfer2 + cijfer3 + cijfer4 + cijfer5) / 4;
+console.log(gemmideld2);
+
+if (gemmideld1 > gemmideld2) {
+  console.log("Sarah " + gemmideld1);
+} else if (gemmideld2 > gemmideld1) {
+  console.log("Sophie" + gemmideld2);
+}
