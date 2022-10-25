@@ -1,11 +1,3 @@
-/*1,2,3,4,5*/
-
-const x = 1;
-const y = "1";
-const z = 2;
-
-console.log(x + y + z);
-
 /*10,11*/
 var cijfer1 = 9.4;
 var cijfer2 = 3.8;
@@ -95,12 +87,15 @@ if (age >= 18) {
 
 /*17*/
 var age = 18;
-thuiswonend = true;
+thuiswonend = false;
+opleiding = true;
 
-if (age >= 18 && (thuiswonend = false)) {
+if (age >= 18 && thuiswonend == true && opleiding == true) {
   console.log("Whieee veel stufi!");
-} else {
+} else if (opleiding == true && age >= 18) {
   console.log("Whiee stufie!");
+} else {
+  console.log("geen stufie");
 }
 
 /*18*/
