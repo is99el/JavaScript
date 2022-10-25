@@ -1,3 +1,11 @@
+/*1,2,3,4,5*/
+
+const x = 1;
+const y = "1";
+const z = 2;
+
+console.log(x + y + z);
+
 /*10,11*/
 var cijfer1 = 9.4;
 var cijfer2 = 3.8;
