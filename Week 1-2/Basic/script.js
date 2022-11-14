@@ -280,3 +280,9 @@
 
 // var jane = new Object();
 // jane.name = "Jane";
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Michael", "Steven", "Peter"];
