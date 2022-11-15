@@ -56,16 +56,16 @@
 
 //opd7
 
-// function name(p1, p2) {
-//   if (p1 === p2) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+function name(p1, p2) {
+  if (p1 === p2) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-// const names = name("Hearder", "Hearder");
-// console.log(names);
+const names = name("Hearder", "Hearder");
+console.log(names);
 
 //opd8
 

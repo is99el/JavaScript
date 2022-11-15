@@ -72,7 +72,7 @@ const object = {
 console.log(object.getAge());
 
 //8
-
+//a
 const object11 = {
   firstName: "Piet",
   lastName: " BU",
@@ -84,7 +84,6 @@ const object11 = {
   },
 };
 
-//9
 const object22 = {
   firstName: "Ismael",
   lastName: " Azaaouaj",
@@ -94,6 +93,8 @@ const object22 = {
     return ` I am a ${this.age} years old.`;
   },
 };
+
+//b
 // console.log(object22.getJobAndName() + object11.getJobAndName());
 // if (object11.age > object22.age) {
 //   console.log(object11.firstName + object11.lastName);
@@ -101,6 +102,7 @@ const object22 = {
 //   console.log(object22.firstName + object22.lastName);
 // }
 
+//c
 if (object11.place === "Almere") {
   console.log(object11.firstName + object11.lastName);
 } else if (object22.place === "Almere") {
