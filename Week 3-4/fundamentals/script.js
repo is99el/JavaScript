@@ -1,18 +1,18 @@
 "use strict";
 
-// function logger() {
-//   console.log("My name is Ismael");
-// }
-// // calling logger
-// logger();
-// logger();
-// logger();
+function logger() {
+  console.log("My name is Ismael");
+}
 
-// function fruitProcessor(apples, oranges) {
-//   console.log(apples, oranges);
-//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-//   return juice;
-// }
+logger();
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
 
 // const appleJuice = fruitProcessor(5, 0);
 // console.log(appleJuice);

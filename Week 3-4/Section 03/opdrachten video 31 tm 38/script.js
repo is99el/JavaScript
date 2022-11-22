@@ -1,6 +1,6 @@
 "use strict";
 
-//opd 1
+// opd 1
 
 // function logger() {
 //   console.log("Mijn eerste functie");
@@ -56,16 +56,16 @@
 
 //opd7
 
-function name(p1, p2) {
-  if (p1 === p2) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function name(p1, p2) {
+//   if (p1 === p2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-const names = name("Hearder", "Hearder");
-console.log(names);
+// const names = name("Hearder", "Hearder");
+// console.log(names);
 
 //opd8
 
@@ -125,17 +125,17 @@ console.log(names);
 
 //opd12
 
-const studeren = (birthYear, advies) => {
-  const age = 2022 - birthYear;
-  const opleiding = advies;
-  if (age >= 10 && advies == "Mavo") {
-    return true;
-  } else if (age >= 10 && advies == "Havo") {
-    return true;
-  } else if (age >= 10 && advies == "Havo") {
-    return true;
-  } else {
-    return false;
-  }
-};
-console.log(studeren(2004, "Mavo"));
+// const studeren = (birthYear, advies) => {
+//   const age = 2022 - birthYear;
+//   const opleiding = advies;
+//   if (age >= 10 && advies == "Mavo") {
+//     return true;
+//   } else if (age >= 10 && advies == "Havo") {
+//     return true;
+//   } else if (age >= 10 && advies == "Havo") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// console.log(studeren(2004, "Mavo"));
