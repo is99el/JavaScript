@@ -1,26 +1,50 @@
-const number = Math.trunc(Math.random() * 100 + 1);
+const number = Math.trunc(Math.random() * 20 + 1);
 
 document.querySelector(".left").textContent = number;
 
-const number2 = Math.trunc(Math.random() * 100 + 1);
+const number2 = Math.trunc(Math.random() * 10 + 1);
 document.querySelector(".right").textContent = number2;
 
-var ops = ["+", "-", "*", "/"];
-var operator = ops[opindex];
+////
+var myArray = ["/", "*", "-", "+"];
 
-var res;
-switch (opindex) {
-  case 0:
-    res = ".left " + ".right";
-    break;
-  case 1:
-    res = ".left " - ".right";
-    break;
-  case 2:
-    res = ".left " / ".right";
-    break;
-  case 3:
-    res = ".left " * ".right";
-    break;
+var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
+document.querySelector(".mid").textContent = randomItem;
+
+const guess = Number(document.querySelector("input").value);
+
+var num1, num2;
+num1 = document.querySelector(".left").textContent;
+num2 = document.querySelector(".right").textContent;
+
+function Calculatrice(num1, num2, myArray) {
+  switch (myArray) {
+    case "+":
+      result = num1 + num2;
+      break;
+
+    case "-":
+      result = num1 - num2;
+      break;
+
+    case "*":
+      result = num1 * num2;
+      break;
+
+    case "/":
+      result = num1 / num2;
+      break;
+  }
 }
-document.querySelector(".mid").textContent = operator;
+var result = Calculatrice(num1, num2, "+");
+var result = Calculatrice(num1, num2, "-");
+var result = Calculatrice(num1, num2, "*");
+var result = Calculatrice(num1, num2, "/");
+
+document.querySelector(".btn").addEventListener("click", function () {
+  if (guess == result) {
+    console.log("good");
+  } else if (guess !== result) {
+    console.log("try again");
+  }
+});

@@ -12,12 +12,14 @@
   grid-row: 1;
   grid-column: 1/9;
   background-color: pink;
+  height: 90px;
 }
 
 .top p {
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .left {
@@ -37,7 +39,7 @@
   justify-content: center;
   align-items: center;
   background-color: salmon;
-  font-size: 30px;
+  font-size: 50px;
 }
 .right {
   display: grid;
