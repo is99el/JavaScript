@@ -1,26 +1,12 @@
 "use strict";
 
-const diceLocks = [
-  "images/selected.png",
-  "images/selected.png",
-  "images/selected.png",
-  "images/selected.png",
-  "images/selected.png",
-  "images/selected.png",
-];
-
-const lock = [-1, -1, -1, -1, -1];
-
-var tmp = 0;
-
 //images random
 var button = document.getElementById("b1");
-button.addEventListener("click", function (ee) {
+button.addEventListener("click", function () {
   //1
   const firstRandomNum = Math.floor(Math.random() * 6) + 1;
   const firstDiceImage = "images/dice" + firstRandomNum + ".png";
   document.querySelectorAll("Img")[0].setAttribute("src", firstDiceImage);
-  function selected() {}
   //2
   const secondRandomNum = Math.floor(Math.random() * 6) + 1;
   const secondDiceImage = "images/dice" + secondRandomNum + ".png";
@@ -44,15 +30,68 @@ button.addEventListener("click", function (ee) {
 });
 
 //single points
+this.checkOnes = function () {
+  var ones = 0;
+  for (var i = 0; i < 1; i++) {
+    if (this.handResult[i] == 1) {
+      ones += 1;
+    }
+  }
+  return ones;
+};
 
-var ones = 0;
-var twos = 0;
-var threes = 0;
-var fours = 0;
-var fives = 0;
-var sixes = 0;
+this.checkTwos = function () {
+  var twos = 0;
+  for (var i = 0; i < 2; i++) {
+    if (this.handResult[i] == 2) {
+      twos += 2;
+    }
+  }
+  return twos;
+};
 
-//multiple
+this.checkThrees = function () {
+  var threes = 0;
+  for (var i = 0; i < 3; i++) {
+    if (this.handResult[i] == 3) {
+      threes += 3;
+    }
+  }
+  return threes;
+};
+
+this.checkFours = function () {
+  var fours = 0;
+  for (var i = 0; i < 4; i++) {
+    if (this.handResult[i] == 4) {
+      fours += 4;
+    }
+  }
+
+  return fours;
+};
+
+this.checkFives = function () {
+  var fives = 0;
+  for (var i = 0; i < 5; i++) {
+    if (this.handResult[i] == 5) {
+      fives += 5;
+    }
+  }
+  return fives;
+};
+
+this.checkSixes = function () {
+  var sixes = 0;
+  for (var i = 0; i < 6; i++) {
+    if (this.handResult[i] == 6) {
+      sixes += 6;
+    }
+  }
+  return sixes;
+};
+
+//multiple points
 var threeOfKind = 0;
 var fourOfKind = 0;
 var fullHouse = 0;
@@ -74,19 +113,3 @@ function score() {
     yahtzee;
   document.getElementById("score").innerHTML = finalscore;
 }
-
-//rolls left
-function dice() {
-  tmp++;
-  document.getElementById("rollseft").innerHTML = tmp;
-  for (var i = 0; i < 5; i++) {
-    button[i] = Math.floor(Math.random() * 6) + 1;
-  }
-  document.getElementById("b1").disabled = true;
-  document.getElementById("b2").disabled = false;
-}
-
-//restart game
-document.getElementById("b3").addEventListener("click", function () {
-  document.location.reload;
-});
