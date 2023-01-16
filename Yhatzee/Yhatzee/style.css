@@ -104,7 +104,7 @@ html {
   grid-row: 1;
   grid-column: 6;
 }
-table,
+
 th,
 td {
   border: 1px solid black;

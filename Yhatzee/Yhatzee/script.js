@@ -87,7 +87,7 @@ function diceRoll() {
     rollingState();
   }
 
-  // random nummer naar elke dice en word gepushed
+  // random nummer naar elke dice
   if (rollCount <= 3) {
     diceValueArray = [];
     for (let i = 0; i < diceObj.length; i++) {
@@ -198,7 +198,7 @@ function newGame() {
 
   // Reset nummers
   for (let i = 0; i < diceDisp.length; i++) {
-    diceDisp[i].textContent = " ";
+    diceDisp[i].textContent = "?";
   }
 
   message.textContent = "Roll!";
